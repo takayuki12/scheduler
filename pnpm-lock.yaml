@@ -4,6 +4,12 @@ dependencies:
   '@fullcalendar/core':
     specifier: ^6.1.8
     version: 6.1.8
+  '@fullcalendar/daygrid':
+    specifier: ^6.1.8
+    version: 6.1.8(@fullcalendar/core@6.1.8)
+  '@fullcalendar/timegrid':
+    specifier: ^6.1.8
+    version: 6.1.8(@fullcalendar/core@6.1.8)
   '@fullcalendar/vue3':
     specifier: ^6.1.8
     version: 6.1.8(@fullcalendar/core@6.1.8)(vue@3.3.4)
@@ -22,6 +28,12 @@ devDependencies:
     specifier: ^1.1.17
     version: 1.1.17
   '@unocss/preset-icons':
+    specifier: ^0.53.1
+    version: 0.53.1
+  '@unocss/preset-web-fonts':
+    specifier: ^0.53.1
+    version: 0.53.1
+  '@unocss/transformer-directives':
     specifier: ^0.53.1
     version: 0.53.1
   '@vitejs/plugin-vue':
@@ -286,6 +298,23 @@ packages:
     resolution: {integrity: sha512-i8JBIvZCWGO9dsMEDcx9bnsQZ9PtGSJdOXGgWbhLaGq2iq41OBdp9g9gM4b/Otv2oK8bL5Gl6CsMmb/HkDtA6Q==}
     dependencies:
       preact: 10.12.1
+    dev: false
+
+  /@fullcalendar/daygrid@6.1.8(@fullcalendar/core@6.1.8):
+    resolution: {integrity: sha512-kCZxQFKb9Vqa3CZRX0v7rMSJ2mlTt4gDpyLfiNJKxUAq7W51uKurPaFZWicaXy1ESHVBxKNlbx5uNjBpyu50JQ==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.8
+    dependencies:
+      '@fullcalendar/core': 6.1.8
+    dev: false
+
+  /@fullcalendar/timegrid@6.1.8(@fullcalendar/core@6.1.8):
+    resolution: {integrity: sha512-3+3KHHCoNcaLs/gQt004hAqICbY5+WAffrZ0ePv+80HFB1OVh8BQ5XXLHSOUbTvXdgtUTcfBHuw9fhO31kt5gA==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.8
+    dependencies:
+      '@fullcalendar/core': 6.1.8
+      '@fullcalendar/daygrid': 6.1.8(@fullcalendar/core@6.1.8)
     dev: false
 
   /@fullcalendar/vue3@6.1.8(@fullcalendar/core@6.1.8)(vue@3.3.4):
